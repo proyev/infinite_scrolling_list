@@ -4,40 +4,70 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-color: #E5E5E5;
 }
 
 body {
     font-family: Roboto, sans-serif;
     height: 100vh;
+    background: black;
 }
 
 header{
     font-size: large;
     height: 50px;
     position: sticky;
+    color: #E5E5E5;
+    border-left: 1px solid #111618;
+}
+
+.title:hover {
+    color: #FCA311;
+}
+
+.msg-owner:hover {
+    color: #FCA311;
+    text-decoration: underline;
 }
 
 aside {
     height: 100%;
-    border-right: 1px solid dimgrey;
+    font-size: 30px;
+    text-align: center;
+    background-color: black;
 }
 
 .home {
     font-size: 20px;
     font-weight: bold;
-    border-bottom: 1px solid dimgrey;
-    border-right: 1px solid dimgrey;
+    border-bottom: 1px solid #111618;
+    border-right: 1px solid #111618;
 }
 
 .ava {
     border-radius: 50%;
-    width: 48px;
+    min-width: 48px;
+    min-height: 48px;
     height: 48px;
-
+    width: 48px;
+    max-height: 48px;
+    max-width: 48px;
 }
 
-#main-viewport,
-.content {
+.ava:hover {
+    background-color: dimgrey;
+    opacity: .5;
+}
+
+i {
+    color: #E5E5E5;
+}
+
+i:hover {
+    color: #FCA311;
+}
+
+#main-viewport {
     height: 100%;
 }
 
@@ -52,9 +82,17 @@ aside {
 
 
 .msg-box {
-    border-bottom: 1px solid dimgrey;
-    border-right: 1px solid dimgrey;
+    border-bottom: 1px solid #111618;
+    border-right: 1px solid #111618;
+    border-left: 1px solid #111618;
     font-size: 16px;
+    line-height: 20px;
+    color: #E5E5E5;
+    background-color: black;
+}
+
+.msg-box:hover {
+    background-color: #14213D;
 }
 
 .msg-owner {
@@ -64,6 +102,10 @@ aside {
 .msg-header {
     height: 20px;
     text-overflow: ellipsis;
+}
+
+.msg-pic {
+    border-radius: 15px;
 }
 
 .msg-ava {

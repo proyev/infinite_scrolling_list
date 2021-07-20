@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 $msg-box-font-size: 16px;
+$font-color: ghostwhite;
 $bgd-color: grey;
 $hover-color: dimgrey;
 $border-color: ghostwhite;
@@ -19,6 +20,11 @@ $border-width: 1px;
   }
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 .msg-box {
   @include msg-box-style();
