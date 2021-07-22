@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$msg-box-font-size: 16px;
+$font-color: #E5E5E5;
+$main-color: #202124;
+$hover-color: #14213D;
+$icon-hover-color: #FCA311;
+$border-color: #4f4f4f;
+$border-width: 1px;
+
+@mixin border-style($color: $border-color, $t-border: 0,
+                                           $r-border: 0,
+                                           $b-border: 0,
+                                           $l-border: 0) {
+  border: {
+    top: $t-border solid $border-color;
+    right: $r-border solid $border-color;
+    bottom: $b-border solid $border-color;
+    left: $l-border solid $border-color;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  color: $font-color;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $main-color;
+  font-family: Roboto, sans-serif;
+  height: 100vh;
+}
+
+aside {
+  height: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+
+header {
+  @include border-style($b-border: 1px, $r-border: 1px, $l-border: 1px);
+  font: {
+    weight: bold;
+    size: large;
+  }
+  height: 50px;
+  vertical-align: center;
+}
+
+main {
+  height: 100%;
+}
+
+section {
+  overflow-y: auto;
+}
+
+span {
+  color: grey;
+}
+
+i {
+  &:hover {
+    color: $icon-hover-color;
+  }
+}

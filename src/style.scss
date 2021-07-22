@@ -1,0 +1,67 @@
+@import 'base';
+
+.icon {
+  top: 5px;
+  position: sticky;
+}
+
+.header {
+  color: $font-color;
+  &:hover {
+    color: $icon-hover-color;
+  }
+}
+
+.msg {
+
+  &-icon {
+    border-radius: 50%;
+    min-width: 48px;
+    min-height: 48px;
+    height: 48px;
+    width: 48px;
+
+    &:hover {
+      background-color: dimgrey;
+      opacity: .65;
+    }
+  }
+
+  &-header {
+    height: 20px;
+    text-overflow: ellipsis;
+  }
+
+  &-owner {
+    color: $font-color;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+      color: $icon-hover-color;
+    }
+  }
+
+  &-account-link,
+  &-meta {
+    color: grey;
+  }
+
+  &-external {
+    &:hover {
+      color: $hover-color;
+    }
+  }
+
+  &-box {
+    @include border-style($b-border: 1px, $r-border: 1px, $l-border: 1px);
+    font-size: 16px;
+    line-height: 20px;
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  &-pic {
+    border-radius: 15px;
+  }
+}
