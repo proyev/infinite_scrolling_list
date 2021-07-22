@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  color: #E5E5E5;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #202124;
+  font-family: Roboto, sans-serif;
+  height: 100vh;
+}
+
+aside {
+  height: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+
+header {
+  border-top: 0 solid #4f4f4f;
+  border-right: 1px solid #4f4f4f;
+  border-bottom: 1px solid #4f4f4f;
+  border-left: 1px solid #4f4f4f;
+  font-weight: bold;
+  font-size: large;
+  height: 50px;
+  vertical-align: center;
+}
+
+main {
+  height: 100%;
+}
+
+section {
+  overflow-y: auto;
+}
+
+span {
+  color: grey;
+}
+
+i:hover {
+  color: #FCA311;
+}
+
+.icon {
+  top: 5px;
+  position: sticky;
+}
+
+.header {
+  color: #E5E5E5;
+}
+.header:hover {
+  color: #FCA311;
+}
+
+.msg-icon {
+  border-radius: 50%;
+  min-width: 48px;
+  min-height: 48px;
+  height: 48px;
+  width: 48px;
+}
+.msg-icon:hover {
+  background-color: dimgrey;
+  opacity: 0.65;
+}
+.msg-header {
+  height: 20px;
+  text-overflow: ellipsis;
+}
+.msg-owner {
+  color: #E5E5E5;
+  font-weight: bold;
+}
+.msg-owner:hover {
+  text-decoration: underline;
+  color: #FCA311;
+}
+.msg-account-link, .msg-meta {
+  color: grey;
+}
+.msg-external:hover {
+  color: #14213D;
+}
+.msg-box {
+  border-top: 0 solid #4f4f4f;
+  border-right: 1px solid #4f4f4f;
+  border-bottom: 1px solid #4f4f4f;
+  border-left: 1px solid #4f4f4f;
+  font-size: 16px;
+  line-height: 20px;
+}
+.msg-box:hover {
+  background-color: #14213D;
+}
+.msg-pic {
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
